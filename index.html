@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+	<title>JS Example Page</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
+	<script src="js/myStyle.js"></script>
+	<style>
+
+	body{
+		margin:0px;
+		padding:0px;
+		background: #fafafa;
+			}
+
+	#funnyBunny {
+		display:none;
+		float: left;
+	}
+
+nav {
+	
+	float: left;
+	margin: auto;
+	width: 100vw;
+}
+
+nav ul {
+
+	list-style: none;
+	font-family: "pt sans", sans-serif;
+	font-size: 14pt;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #D44646;
+	text-align: center;
+	height: 50px;
+}
+
+nav ul li {
+
+	display: inline-block;
+	padding: 10px;
+
+}
+
+button{
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+
+h1{
+	font-family: sans-serif;
+}
+	</style>
+
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="fade">home</li>
+			<li class="fade">about</li>
+			<li class="fade">contact</li>
+		</ul>
+	</nav>
+	<h1>
+		Click Me!
+	</h1>
+	<button type="button" button class="btn btn-default btn-xs" onclick="$('#funnyBunny').fadeIn();">click to see a funny bunny joke!</button>
+
+	<div id="funnyBunny">
+	    <img class="img" src="img/KungFu.jpg">
+	</div>
+
+
+</body>
+
+</html>
